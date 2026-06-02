@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quest Arena | Boss Battle</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: white;
+      background: linear-gradient(135deg, #050712, #111b3d 50%, #12061f);
+      padding: 34px 18px;
+    }
+
+    .page {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      color: #9bcaff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 0.88rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 6vw, 4.3rem);
+      text-shadow: 0 0 25px rgba(105, 93, 255, 0.75);
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      color: #dbe6ff;
+      font-size: 1.12rem;
+      line-height: 1.65;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .image-card {
+      margin: 34px auto;
+      padding: 14px;
+      border: 2px solid rgba(160, 198, 255, 0.42);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 42px rgba(76, 108, 255, 0.35);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .quest-box {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+
+    .quest-item {
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(10, 16, 44, 0.82);
+      border: 1px solid rgba(149, 194, 255, 0.35);
+    }
+
+    .quest-item h2 {
+      color: #cce5ff;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+    }
+
+    .quest-item p {
+      color: #dce5ff;
+      line-height: 1.55;
+    }
+
+    .nav {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      color: #071026;
+      background: linear-gradient(135deg, #8ed2ff, #f5e4ff);
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 28px rgba(119, 189, 255, 0.75);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 0 38px rgba(171, 219, 255, 1);
+    }
+
+    @media (max-width: 760px) {
+      .quest-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="eyebrow">AI-Generated Boss Battle Content</div>
+      <h1>Answer to Strike</h1>
+      <p class="intro">
+        This image shows the gameplay idea: the player must answer an English multiple-choice question before the sword attack can hit the boss.
+      </p>
+    </header>
+
+    <section class="image-card">
+      <img src="battle-question.png" alt="AI-generated fantasy RPG boss battle with an English multiple-choice question overlay" />
+    </section>
+
+    <section class="quest-box">
+      <div class="quest-item">
+        <h2>Game Mechanic</h2>
+        <p>Every boss attack pauses the fight and asks a learning question. Correct answers unlock special attacks.</p>
+      </div>
+      <div class="quest-item">
+        <h2>AI Content</h2>
+        <p>The boss battle image is AI-generated and different from the video used on the landing page.</p>
+      </div>
+    </section>
+
+    <div class="nav">
+      <a class="button" href="index.html">Back to Landing Page</a>
+    </div>
+  </main>
+</body>
+</html>

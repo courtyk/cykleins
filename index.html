@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quest Arena | Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: white;
+      background: radial-gradient(circle at top, #243d7a 0%, #0b1026 45%, #050712 100%);
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .bg-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.65;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(5, 7, 18, 0.7), rgba(24, 44, 104, 0.45));
+      z-index: 1;
+    }
+
+    .content-card {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      padding: 44px;
+      border: 2px solid rgba(154, 205, 255, 0.5);
+      border-radius: 28px;
+      background: rgba(6, 10, 31, 0.72);
+      box-shadow: 0 0 40px rgba(73, 137, 255, 0.45), inset 0 0 30px rgba(111, 83, 255, 0.15);
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      color: #92c8ff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      line-height: 0.95;
+      margin-bottom: 22px;
+      text-shadow: 0 0 25px rgba(104, 170, 255, 0.9);
+    }
+
+    p {
+      max-width: 680px;
+      margin: 0 auto 30px;
+      color: #e2ecff;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 30px;
+      border-radius: 999px;
+      color: #081126;
+      background: linear-gradient(135deg, #8ed2ff, #f2e6ff);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+      box-shadow: 0 0 28px rgba(119, 189, 255, 0.8);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 0 38px rgba(171, 219, 255, 1);
+    }
+
+    .video-note {
+      margin-top: 24px;
+      font-size: 0.95rem;
+      color: #bac8ed;
+    }
+
+    @media (max-width: 650px) {
+      .content-card {
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <!-- Upload your AI-generated video to Replit and name it exactly video.mp4 -->
+    <video class="bg-video" autoplay muted loop playsinline controls>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+    <section class="content-card">
+      <div class="eyebrow">AI Fantasy Learning Game</div>
+      <h1>Quest Arena</h1>
+      <p>
+        Battle giant monsters in a magical RPG world where every attack depends on answering an English or math question correctly.
+      </p>
+      <a class="button" href="content.html">Enter the Boss Battle</a>
+      <div class="video-note">The background video loops automatically when the page opens.</div>
+    </section>
+  </main>
+</body>
+</html>
